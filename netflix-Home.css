@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* body {
+    position: relative;
+} */
+
+section {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+/* Edit Scroll Bar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Edit Scroll Bar */
+
+
+/* ------- NAVBAR STARTS HERE ------- */
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav .navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    padding-right: 1rem;
+}
+
+.logo img {
+    width: 8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1.1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav .right {
+    display: flex;
+    padding-right: 1rem;
+}
+
+.right>div {
+    display: flex;
+}
+
+.right>div i {
+    color: rgb(239, 239, 239);
+    font-size: 1.5rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    display: block;
+}
+
+.right .icon i {
+    display: none;
+}
+
+/* ------- NAVBAR ENDS HERE ------- */
+
+
+/* ------- Play Box Starts Here ------- */
+.play-box {
+    max-width: 1200px;
+    height: 0;
+    /* height: auto; */
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    transition: all 0.4s;
+    /* z-index: -1; */
+}
+
+/* ------- Play Box Ends Here ------- */
+
+
+/* -------- Hero Section Starts Here --------- */
+.container h2 {
+    margin: 1rem 1.5rem;
+    color: rgb(239, 239, 239);
+}
+
+.play-videos {
+    display: flex;
+    margin: 1rem;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+
+.play-videos .v-cards {
+    margin: 0.5rem 0.5rem;
+}
+
+.ep-title {
+    color: rgb(214, 202, 202);
+    font-weight: 700;
+    padding: 0.3rem 0 0.5rem 0;
+}
+
+/* -------- Hero Section Ends Here --------- */
+
+
+/* --------- Footer Starts Here ---------- */
+.footer .foot-content{
+    max-width: 45rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.foot-content h1{
+    font-size: 2.7rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.foot-content p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer .foot-content button{
+    background-color: rgb(234, 12, 12);
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1.8rem 0;
+}
+
+.footer .foot-content button:hover{
+    background-color: red;
+}
+
+.footer {
+    background-color: rgb(22, 20, 20);
+    padding: 2rem 8rem;
+    color: #cac1c1;
+}
+
+.footer h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row .col {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0px;
+}
+
+.footer .row .col a {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    color: #c8c2c2;
+    font-weight: 500;
+}
+
+.footer button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 400;
+    background-color: #151414;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 242, 242);
+    cursor: pointer;
+}
+
+.footer p {
+    margin-top: 1.5rem;
+}
+
+#foot_s {
+    color: red;
+    font-weight: 600;
+}
+
+/* --------- Footer Ends Here ---------- */
+
+
+/* --------- Media Quaries --------- */
+@media screen and (max-width: 850px) {
+
+    .right>div i {
+        display: none;
+    }
+
+    .right .icon i {
+        display: block;
+        z-index: 2;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 4.2rem;
+        left: 0;
+        background-color: rgb(45, 42, 42);
+        padding: 0.5rem 1.4rem 0.7rem 1.4rem;
+        height: auto;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 0.7rem;
+        display: none;
+    }
+
+    nav ul li {
+        padding: 0.3rem 0;
+    }
+
+    .upper-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0.2rem 0;
+    }
+
+    .foot-content h1{
+        font-size: 2.2rem;
+    }
+    .foot-content p{
+        font-size: 1.2rem;
+    }
+    .footer .foot-content button{
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 2rem 2rem;
+    }
+
+    .foot-content h1{
+        font-size: 2rem;
+    }
+    .foot-content p{
+        font-size: 1rem;
+    }
+    .footer .foot-content button{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media screen and (max-width:490px) {
+    .play-videos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-videos .v-cards {
+        margin: 0.7rem auto;
+    }
+
+    .v-cards img {
+        width: 20rem;
+    }
+
+    .footer h2 {
+        font-size: 1.1rem;
+    }
+
+    .footer a {
+        font-size: 0.9rem;
+    }
+
+    .footer button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .foot-content h1{
+        font-size: 1.5rem;
+    }
+    .foot-content p{
+        font-size: 0.9rem;
+    }
+    .footer .foot-content button{
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}

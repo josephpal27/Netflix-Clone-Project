@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+main{
+    background-color: rgb(33, 31, 31);
+}
+
+/* ------ Edit Scroll Bar ------- */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* ------- Edit Scroll Bar -------- */
+
+
+/* ------ Nav Starts Here ------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav .logo img{
+    width: 9rem;
+}
+
+nav .nav-content{
+    color: white;
+}
+
+.nav-content .join-btn{
+    background-color: rgb(234, 12, 12);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-content .join-btn:hover{
+    background-color: red;
+}
+
+.nav-content span{
+    margin-right: 1rem;
+}
+/* ------ Nav Ends Here ------ */
+
+/* ------- Play Box Starts Here ------- */
+.hero .play-container{
+    background-color: black;
+}
+
+.play-box {
+    max-width: 1200px;
+    height: 0;
+    /* height: auto; */
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    transition: all 0.4s;
+}
+/* ------- Play Box Ends Here ------- */
+
+/* ------ Hero Section Starts Here ------ */
+
+.head-content{
+    max-width: 40rem;
+    padding: 2rem 0 1rem 3rem;
+}
+
+.hero h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero p{
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* ------ Video Row Starts Here ------ */
+.container{
+    margin: 0 3rem 0 3rem;
+}
+.container h2{
+    color: white;
+    font-weight: 500;
+    padding: 0.7rem 0 1rem 0;
+}
+
+.container span{
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+    color: rgb(235, 229, 229);
+}
+
+.vid-row{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.v-cards{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.v-cards:last-child{
+    margin: 0;
+}
+
+.v-cards span{
+    font-size: 1rem;
+    color: white;
+    padding: 0;
+}
+
+/* ------ Video Row Ends Here ------ */
+
+
+/* --------- Footer Starts Here ---------- */
+
+.footer .foot-content{
+    max-width: 45rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-content h1{
+    font-size: 2.7rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.foot-content p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer .foot-content button{
+    background-color: rgb(234, 12, 12);
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1.8rem 0;
+}
+
+.footer .foot-content button:hover{
+    background-color: red;
+}
+
+.footer {
+    background-color: rgb(22, 20, 20);
+    padding: 2rem 6rem;
+    color: #cac1c1;
+    margin-top: 2rem;
+}
+
+.footer h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row .col {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0px;
+}
+
+.footer .row .col a {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    color: #c8c2c2;
+    font-weight: 500;
+}
+
+.footer button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 400;
+    background-color: #151414;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 242, 242);
+    cursor: pointer;
+}
+
+.footer p {
+    margin-top: 1.5rem;
+}
+
+#foot_s{
+    color: red;
+    font-weight: 600;
+}
+
+/* --------- Footer Ends Here ---------- */
+
+/* ------ Hero Section Ends Here ------ */
+
+
+
+
+/* ------ Media Quaries ------ */
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-content span{
+       display: none;
+    }
+    .footer {
+        padding: 2rem 3rem;
+    }
+    .foot-content h1{
+        font-size: 2.2rem;
+    }
+    .foot-content p{
+        font-size: 1.2rem;
+    }
+    .footer .foot-content button{
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    nav{
+        padding: 0 1rem 0 0.4rem;
+    }
+    .head-content{
+        padding: 1rem 1.5rem 1rem 1.1rem;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero p{
+        font-size: 1.1rem;
+    }
+    .container{
+        margin: 0 1.1rem 0 1.1rem;
+    }
+    .container h2{
+        padding: 0.7rem 0 0.7rem 0;
+    }
+    .v-cards img{
+        width: 250px;
+    }
+    .footer {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .row .col {
+        padding: 0.5rem 0px;
+        font-size: 0.8rem;
+    }
+    .footer button {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+    .footer h2{
+        font-size: 1rem;
+    }
+    .foot-content h1{
+        font-size: 2rem;
+    }
+    .foot-content p{
+        font-size: 1rem;
+    }
+    .footer .foot-content button{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    nav .logo img{
+        width: 8rem;
+    }
+    .nav-content .join-btn{
+        padding: 0.4rem 0.5rem;
+    }
+    .container h2{
+        font-size: 1.3rem;
+    }
+    .v-cards img{
+        width: 190px;
+    }
+    .v-cards span{
+        font-size: 0.8rem;
+    }
+    .foot-content h1{
+        font-size: 1.5rem;
+    }
+    .foot-content p{
+        font-size: 0.9rem;
+    }
+    .footer .foot-content button{
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
