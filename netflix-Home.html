@@ -11,7 +11,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -20,196 +20,217 @@
     <main>
         <section>
 
-        <!-- NavBar Starts Here -->
-    <nav>
-        <div class="navbar">
+            <!-- NavBar Starts Here -->
+            <nav>
+                <div class="navbar">
 
-            <div class="left">
-                <div class="logo">
-                    <img src="images/logo3.png" alt="logo">
+                    <div class="left">
+                        <div class="logo">
+                            <img src="images/logo3.png" alt="logo">
+                        </div>
+
+                        <ul>
+                            <li><a href="netflix-Home.html">Home</a></li>
+                            <li><a href="netflix-TV shows.html">TV Shows</a></li>
+                            <li><a href="netflix-Movies.html">Movies</a></li>
+                            <li><a href="#">News & Popular</a></li>
+                            <li><a href="#">My List</a></li>
+                            <li><a href="#">Browse by Languages</a></li>
+                        </ul>
+
+                        <!-- <div class="upper-div" onclick="removeUl()"> -->
+                        <div class="upper-div">
+
+                        </div>
+
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="icon">
+                            <!-- <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> -->
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <!-- NavBar Ends Here -->
+
+
+            <!-- Play Box Starts Here -->
+            <div class="play-container">
+                <div class="play-box" id="play-box">
+
+                    <video src="" width="100%" height="100%" controls autoplay> </video>
+
+                </div>
+            </div>
+
+            <!-- Play Box Ends Here -->
+
+
+            <div class="banner">
+
+                <img src="images/banner11.jpg" alt="" width="100%">
+        
+                <div class="banner-text">
+                    <span>TRENDING SERIES</span>
+                    <h4>#1 on Netflix Today</h4>
+                    <p>Determinded to protect a young patient who escaped a mystreious cult, a psychiatrist takes the girl in.</p>
+                    <button class="play_btn" onclick="banner_play()"><i class="fa-solid fa-play"></i> Play</button>
+                    <button class="info_btn"><i class="fa-solid fa-circle-info"></i> More Info</button>
+                </div>
+            </div>
+
+
+            <!-- Hero Section Starts Here -->
+            <div class="container">
+
+                <!-- 1st Row -->
+                <h2>Trending Now <span>(Slide Left)</span></h2>
+
+                <div class="play-videos">
+                    <div class="v-cards">
+                        <img src="images/hm-1st.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-2nd.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-3rd.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-4th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-5th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-6th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
                 </div>
 
-                <ul>
-                    <li><a href="netflix-Home.html">Home</a></li>
-                    <li><a href="netflix-TV shows.html">TV Shows</a></li>
-                    <li><a href="netflix-Movies.html">Movies</a></li>
-                    <li><a href="#">News & Popular</a></li>
-                    <li><a href="#">My List</a></li>
-                    <li><a href="#">Browse by Languages</a></li>
-                </ul>
+                <!-- 2nd Row -->
+                <h2>Action <span>(Slide Left)</span> </h2>
 
-                <!-- <div class="upper-div" onclick="removeUl()"> -->
-                <div class="upper-div">
+                <div class="play-videos">
+                    <div class="v-cards">
+                        <img src="images/hm-7th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-8th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-9th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-10th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-11th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-12th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                </div>
 
+                <!-- 3rd Row -->
+                <h2>Top of the Weekend <span>(Slide Left)</span> </h2>
+
+                <div class="play-videos">
+                    <div class="v-cards">
+                        <img src="images/hm-13th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-14th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-15th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-16th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-17th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
+                    <div class="v-cards">
+                        <img src="images/hm-18th.jpg" alt="">
+                        <p class="ep-title">Episode Title</p>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="right">
-                <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-bell"></i>
+            <!-- Hero Section Ends Here -->
+
+
+            <!-- Footer Starts Here -->
+            <div class="footer">
+
+                <div class="foot-content">
+                    <h1>There’s even more to watch.</h1>
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                        Netflix originals and more. Watch as much as you want, anytime you want.</p>
+                    <button>JOIN NOW</button>
                 </div>
-                <div class="icon">
-                    <!-- <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> -->
-                    <i class="fa-solid fa-bars"></i>
+
+                <h2>Questions? Call 000-800-575-2501</h2>
+
+                <div class="row">
+
+                    <div class="col">
+                        <a href="#">FAQ</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Speed Test</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Help Centre</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Cookie Preferences</a>
+                        <a href="#">Legal Notices</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Account</a>
+                        <a href="#">Ways to Watch</a>
+                        <a href="#">Corporate Information</a>
+                        <a href="#">Only on Netflix</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Media Centre</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
                 </div>
+
+                <button class="btn1"> <i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <p>Netflix India by <span id="foot_s">Joseph</span></p>
             </div>
 
-        </div>
-    </nav>
-    <!-- NavBar Ends Here -->
-
-
-        <!-- Play Box Starts Here -->
-        <div class="play-box" id="play-box">
-
-            <video src="" width="100%" height="100%" controls autoplay> </video>
-            
-        </div>
-
-        <!-- Play Box Ends Here -->
-
-
-        <!-- Hero Section Starts Here -->
-        <div class="container">
-
-            <!-- 1st Row -->
-            <h2>Trending Now</h2>
-
-            <div class="play-videos">
-                <div class="v-cards">
-                    <img src="images/1st.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/2nd.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/3rd.jpeg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/4th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/5th.webp" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/6th.webp" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-            </div>
-
-            <!-- 2nd Row -->
-            <h2>Action</h2>
-
-            <div class="play-videos">
-                <div class="v-cards">
-                    <img src="images/7th.webp" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/8th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/9th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/10th.webp" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/11th.jpeg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/12th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-            </div>
-
-            <!-- 3rd Row -->
-            <h2>Top of the Weekend</h2>
-
-            <div class="play-videos">
-                <div class="v-cards">
-                    <img src="images/13th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/14th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/15th.png" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/16th.webp" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-                <div class="v-cards">
-                    <img src="images/17th.jpg" alt="" width="340" height="190">
-                    <p class="ep-title">Episode Title</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Hero Section Ends Here -->
-
-
-        <!-- Footer Starts Here -->
-        <div class="footer">
-
-            <div class="foot-content">
-                <h1>There’s even more to watch.</h1>
-                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
-                    Netflix originals and more. Watch as much as you want, anytime you want.</p>
-                <button>JOIN NOW</button>
-            </div>
-
-            <h2>Questions? Call 000-800-575-2501</h2>
-    
-            <div class="row">
-    
-                <div class="col">
-                    <a href="#">FAQ</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Speed Test</a>
-                </div>
-                <div class="col">
-                    <a href="#">Help Centre</a>
-                    <a href="#">Jobs</a>
-                    <a href="#">Cookie Preferences</a>
-                    <a href="#">Legal Notices</a>
-                </div>
-                <div class="col">
-                    <a href="#">Account</a>
-                    <a href="#">Ways to Watch</a>
-                    <a href="#">Corporate Information</a>
-                    <a href="#">Only on Netflix</a>
-                </div>
-                <div class="col">
-                    <a href="#">Media Centre</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Contact Us</a>
-                </div>
-    
-            </div>
-    
-            <button class="btn1"> <i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-caret-down"></i> </button>
-            <p>Netflix India by <span id="foot_s">Joseph</span></p>
-        </div>
-
-        <!-- Footer Ends Here -->
+            <!-- Footer Ends Here -->
 
         </section>
     </main>

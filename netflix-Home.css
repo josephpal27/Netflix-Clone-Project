@@ -5,14 +5,10 @@
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
-/* body {
-    position: relative;
-} */
-
 section {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(24, 23, 23);
 }
 
 
@@ -32,11 +28,12 @@ section {
 /* Edit Scroll Bar */
 
 
-/* ------- NAVBAR STARTS HERE ------- */
+/* ------- Navbar Starts Here ------- */
 nav{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 4;
 }
 
 nav .navbar {
@@ -97,27 +94,93 @@ nav .right {
     display: none;
 }
 
-/* ------- NAVBAR ENDS HERE ------- */
+/* ------- Navbar Ends Here ------- */
 
 
 /* ------- Play Box Starts Here ------- */
+.play-container{
+    width: 100%;
+    background-color: black;
+}
 .play-box {
     max-width: 1200px;
     height: 0;
-    /* height: auto; */
-    margin: 1rem auto;
+    margin: 0 auto;
     border-radius: 0.5rem;
     transition: all 0.4s;
-    /* z-index: -1; */
 }
 
 /* ------- Play Box Ends Here ------- */
+
+/* -------- Banner Section Starts Here -------- */
+/* .banner{
+    display: none;
+} */
+
+.banner-text{
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+    color: white;
+    z-index: 1;
+}
+
+.banner-text span{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner-text h4{
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.banner-text p{
+    font-size: 1.3rem;
+    max-width: 50%;
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+.banner-text button{
+    padding: 0.4rem 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.play_btn:hover{
+    background-color: white;
+}
+
+.info_btn{
+    background-color: rgb(105, 103, 103);
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.info_btn:hover{
+    background-color: rgb(88, 86, 86);
+}
+
+/* -------- Banner Section Ends Here -------- */
 
 
 /* -------- Hero Section Starts Here --------- */
 .container h2 {
     margin: 1rem 1.5rem;
-    color: rgb(239, 239, 239);
+    color: white;
+    font-weight: 600;
+}
+
+.container h2 span{
+    color: rgb(242, 242, 242);
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
 }
 
 .play-videos {
@@ -128,13 +191,13 @@ nav .right {
 }
 
 .play-videos .v-cards {
-    margin: 0.5rem 0.5rem;
+    margin: 0.2rem 0.5rem;
 }
 
 .ep-title {
-    color: rgb(214, 202, 202);
-    font-weight: 700;
-    padding: 0.3rem 0 0.5rem 0;
+    color: rgb(237, 228, 228);
+    font-weight: 500;
+    padding: 0.2rem 0;
 }
 
 /* -------- Hero Section Ends Here --------- */
@@ -179,7 +242,7 @@ nav .right {
 
 .footer {
     background-color: rgb(22, 20, 20);
-    padding: 2rem 8rem;
+    padding: 2rem 6rem;
     color: #cac1c1;
 }
 
@@ -229,16 +292,95 @@ nav .right {
 /* --------- Footer Ends Here ---------- */
 
 
-/* --------- Media Quaries --------- */
-@media screen and (max-width: 850px) {
 
+/* --------- Media Quaries --------- */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .banner-text{
+        top: 8rem;
+        left: 3rem;
+    }
+
+    .banner-text span{
+        font-size: 2.9rem;
+    }
+    
+    .banner-text h4{
+        padding-top: 1.6rem;
+        font-size: 1.7rem;
+    }
+    
+    .banner-text p{
+        font-size: 1.2rem;
+    }
+
+    .banner-text button{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .banner-text{
+        top: 7rem;
+        left: 3rem;
+    }
+
+    .banner-text span{
+        font-size: 2.5rem;
+    }
+    
+    .banner-text h4{
+        padding-top: 1.3rem;
+        font-size: 1.4rem;
+    }
+    
+    .banner-text p{
+        font-size: 1.1rem;
+    }
+
+    .banner-text button{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .banner-text{
+        top: 6rem;
+        left: 2rem;
+    }
+
+    .banner-text span{
+        font-size: 2rem;
+    }
+    
+    .banner-text h4{
+        padding-top: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .banner-text p{
+        font-size: 0.8rem;
+        padding-top: 0.3rem;
+    }
+
+    .banner-text button{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
     .right>div i {
         display: none;
     }
 
     .right .icon i {
         display: block;
-        z-index: 2;
+        z-index: 3;
     }
 
     .navbar {
@@ -249,13 +391,13 @@ nav .right {
         flex-direction: column;
         position: absolute;
         width: 100%;
-        top: 4.2rem;
+        top: 4.1rem;
         left: 0;
         background-color: rgb(45, 42, 42);
         padding: 0.5rem 1.4rem 0.7rem 1.4rem;
         height: auto;
         overflow: hidden;
-        z-index: 1;
+        z-index: 2;
         border-radius: 0.7rem;
         display: none;
     }
@@ -289,6 +431,44 @@ nav .right {
     }
 }
 
+@media screen and (max-width: 576px) {
+    nav .navbar {
+        padding: 0 0.4rem;
+    }
+
+    nav ul {
+        top: 3.6rem;
+    }
+
+    .banner-text{
+        top: 4.5rem;
+        left: 1rem;
+    }
+
+    .banner-text span{
+        font-size: 1.5rem;
+    }
+    
+    .banner-text h4{
+        padding-top: 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    
+    .banner-text p{
+        font-size: 0.6rem;
+        padding-top: 0.2rem;
+        max-width: 60%;
+    }
+
+    .banner-text button{
+        font-size: 0.6rem;
+        margin-top: 0.4rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+
 @media screen and (max-width: 750px) {
     .footer {
         padding: 2rem 4rem;
@@ -319,17 +499,29 @@ nav .right {
 
 
 @media screen and (max-width:490px) {
+    .container h2 {
+        margin: 1rem 1rem;
+    }
+
+    .container h2 span{
+        display: none;
+    }
+
     .play-videos {
         display: flex;
         flex-direction: column;
     }
 
     .play-videos .v-cards {
-        margin: 0.7rem auto;
+        margin: 0.2rem auto;
     }
 
     .v-cards img {
-        width: 20rem;
+        width: 100vw;
+    }
+
+    .ep-title {
+        padding: 0.2rem 0 1.5rem 0;
     }
 
     .footer h2 {

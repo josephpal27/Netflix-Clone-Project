@@ -1,5 +1,6 @@
 
 //-------- Initialize the Variables -------//
+let banner = document.querySelector('.banner');
 let playbox = document.getElementById('play-box');
 let vcards = Array.from(document.getElementsByClassName('v-cards'));
 
@@ -43,73 +44,85 @@ let vcards = Array.from(document.getElementsByClassName('v-cards'));
 let vid = [
     {
         path: 'videos/1st.mp4',
-        title: 'The Teaser: Season 1'
+        title: 'Breaking Bad: Season 1'
     },
     {
         path: 'videos/2nd.mp4',
-        title: 'The Peaky Blinders'
+        title: 'The Yellowstone'
     },
     {
         path: 'videos/3rd.mp4',
-        title: 'Killer Soup: Season 1'
+        title: 'Peaky Blinders: Intervals'
     },
     {
         path: 'videos/4th.mp4',
-        title: 'Berlin: Season 1'
+        title: 'King The Land: Part 1'
     },
     {
         path: 'videos/5th.mp4',
-        title: 'Fool Me Once: Limited Series'
+        title: 'Lost in Space: Limited Series'
     },
     {
         path: 'videos/6th.mp4',
-        title: 'Aar Ya Paar'
+        title: 'Squid Game'
     },
     {
         path: 'videos/7th.mp4',
-        title: 'Hollywood: Season 1'
+        title: 'BlackList: Season 1'
     },
     {
         path: 'videos/8th.mp4',
-        title: 'The Elite'
+        title: 'The Narcos'
     },
     {
         path: 'videos/9th.mp4',
-        title: 'The Brothers Sun: Season 1'
+        title: 'The Witcher: Season 1'
     },
     {
         path: 'videos/10th.mp4',
-        title: 'Khakee: Chapter 2'
+        title: 'Wednesday: Chapter 2'
     },
     {
         path: 'videos/11th.mp4',
-        title: 'My Demon: Season 1'
+        title: 'A Killer Paradox'
     },
     {
         path: 'videos/12th.mp4',
-        title: 'Gyeongseong Creature: Season 1'
+        title: 'Woman: Season 2'
     },
     {
         path: 'videos/13th.mp4',
-        title: 'Jeffrey Epstein: Filthy Rich'
+        title: 'The Railway Men'
     },
     {
         path: 'videos/14th.mp4',
-        title: 'Alone: Season 1'
+        title: 'Griselda: Season 1'
     },
     {
         path: 'videos/15th.mp4',
-        title: 'Rana Naidu Intervals'
+        title: 'The Brothers Sun'
     },
     {
         path: 'videos/16th.mp4',
-        title: 'Single Inferno: Season 3'
+        title: 'Alexander: Season 3'
     },
     {
         path: 'videos/17th.mp4',
-        title: 'The Crown: Last Episode'
+        title: 'MF Ghost: Last Episode'
+    },
+    {
+        path: 'videos/19th.mp4',
+        title: 'Money Heist: Part 2'
     },
 ]
+
+
+
+function banner_play() {
+    playbox.querySelector('video').setAttribute('src', vid[16].path);
+    playbox.style.height = 'auto';
+    banner.style.display = 'none';
+}
 
 
 
@@ -120,6 +133,7 @@ ep_title.innerText = vid[index].title;
 
 
     el.addEventListener('click', () => {
+        banner.style.display = 'none';
         playbox.style.height = 'auto';
         window.scrollTo(0, 0);
         playbox.querySelector('video').setAttribute('src', vid[index].path);
