@@ -73,6 +73,12 @@ nav a {
     font-weight: 600;
 }
 
+nav a:hover {
+    color: white;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+}
+
 nav .right {
     display: flex;
     padding-right: 1rem;
@@ -198,6 +204,10 @@ nav .right {
     color: rgb(237, 228, 228);
     font-weight: 500;
     padding: 0.2rem 0;
+}
+
+.v-cards:hover .ep-title{
+    color: white;
 }
 
 /* -------- Hero Section Ends Here --------- */
