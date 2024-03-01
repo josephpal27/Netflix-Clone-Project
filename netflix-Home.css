@@ -73,7 +73,12 @@ nav a {
     font-weight: 600;
 }
 
-nav a:hover {
+nav a.active{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+
+nav a:hover{
     color: white;
     border-bottom: 3px solid red;
     padding-bottom: 5px;
